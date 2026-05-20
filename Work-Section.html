@@ -1,0 +1,274 @@
+<!-- Paste-Safe Latest Projects Section (Scoped) -->
+<section class="mp-latest-projects" id="casestudy" data-mp-slider>
+  <!-- Replace heading text if needed -->
+  <div class="mp-header">
+    <h2 class="mp-title">Latest projects</h2>
+    <div class="mp-controls" aria-label="Project Slider Controls">
+      <button class="mp-btn mp-prev" type="button" aria-label="Previous project">
+        <span>&larr;</span>
+      </button>
+      <button class="mp-btn mp-next" type="button" aria-label="Next project">
+        <span>&rarr;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mp-track-wrap">
+    <div class="mp-track" role="list">
+      <!-- CARD 1: Replace link/image/title/description -->
+      <a class="mp-card" role="listitem" href="./project-vhs-entertainment.html">
+        <div class="mp-image-wrap">
+          <img class="mp-image" src="C:\Users\user\OneDrive\Desktop\Documents\Playground\nbts.webp" alt="Luniva  Beauty case study">
+          <div class="mp-overlay"></div>
+        </div>
+        <div class="mp-copy">
+          <h3>Luniva  Beauty</h3>
+          <p>Built a fully custom Shopify store using Liquid without relying on default theme sections.</p>
+        </div>
+      </a>
+
+      <!-- CARD 2 -->
+      <a class="mp-card" role="listitem" href="./project-alexis-le-rossignol.html">
+        <div class="mp-image-wrap">
+          <img class="mp-image" src="C:\Users\user\OneDrive\Desktop\Documents\Playground\JNJ.webp" alt="Jnj By Madhuri case study">
+          <div class="mp-overlay"></div>
+        </div>
+        <div class="mp-copy">
+          <h3>Jnj By Madhuri</h3>
+          <p>Revived a broken Shopify store by rebuilding UI.</p>
+        </div>
+      </a>
+
+      <!-- CARD 3 -->
+      <a class="mp-card" role="listitem" href="./project-kolecto.html">
+        <div class="mp-image-wrap">
+          <img class="mp-image" src="C:\Users\user\OneDrive\Desktop\Documents\Playground\NA.webp" alt="Nathoasto case study">
+          <div class="mp-overlay"></div>
+        </div>
+        <div class="mp-copy">
+          <h3>Nathoasto (WordPress)</h3>
+          <p>Created a full business website from scratch with branding, content, and lead generation system.</p>
+        </div>
+      </a>
+
+      <!-- CARD 4 -->
+      <a class="mp-card" role="listitem" href="./project-musilac.html">
+        <div class="mp-image-wrap">
+          <img class="mp-image" src="C:\Users\user\OneDrive\Desktop\Documents\Playground\OC.webp" alt="Occasions case study">
+          <div class="mp-overlay"></div>
+        </div>
+        <div class="mp-copy">
+          <h3>Occasions</h3>
+          <p>Built a full Shopify store with custom checkout logic for bulk/set-based purchasing.</p>
+        </div>
+      </a>
+
+      <!-- CARD 5 -->
+      <a class="mp-card" role="listitem" href="./project-zeb.html">
+        <div class="mp-image-wrap">
+          <img class="mp-image" src="C:\Users\user\OneDrive\Desktop\Documents\Playground\LP.webp" alt="Landing Page case study">
+          <div class="mp-overlay"></div>
+        </div>
+        <div class="mp-copy">
+          <h3>Landing Page (Gym Rings)</h3>
+          <p>Designed a long-form, conversion-focused Shopify landing page with structured persuasion flow.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Fully scoped styles: no global side effects */
+.mp-latest-projects {
+  --mp-bg: #0b0b0b;
+  --mp-fg: #ffffff;
+  --mp-muted: #c4c4c4;
+  --mp-accent: white;
+  --mp-card-w: clamp(196px, 17.5vw, 246px);
+  --mp-gap: clamp(16px, 2vw, 30px);
+
+  font-family: Montserrat, Arial, sans-serif;
+  background: var(--mp-bg);
+  color: var(--mp-fg);
+  padding: clamp(62px, 8vw, 128px) clamp(44px, 11vw, 210px);
+  overflow: hidden;
+  position: relative;
+}
+
+.mp-latest-projects .mp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: clamp(20px, 3.5vw, 34px);
+}
+
+.mp-latest-projects .mp-title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 58px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.mp-latest-projects .mp-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.mp-latest-projects .mp-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: transparent;
+  color: var(--mp-fg);
+  cursor: pointer;
+  transition: transform 0.35s ease, background-color 0.35s ease, border-color 0.35s ease;
+}
+
+.mp-latest-projects .mp-btn:hover {
+  transform: translateY(-2px);
+  background: var(--mp-accent);
+  border-color: var(--mp-accent);
+  color: #2a2a2a;
+}
+
+.mp-latest-projects .mp-track-wrap {
+  overflow: hidden;
+}
+
+.mp-latest-projects .mp-track {
+  display: flex;
+  gap: var(--mp-gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 6px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.mp-latest-projects .mp-track::-webkit-scrollbar {
+  display: none;
+}
+
+.mp-latest-projects .mp-card {
+  flex: 0 0 var(--mp-card-w);
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: transform 0.45s cubic-bezier(.22,.61,.36,1);
+}
+
+.mp-latest-projects .mp-image-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #171717;
+  aspect-ratio: 0.62;
+}
+
+.mp-latest-projects .mp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.03);
+  filter: grayscale(100%);
+  transition: transform 0.7s cubic-bezier(.22,.61,.36,1), filter 0.7s ease;
+}
+
+.mp-latest-projects .mp-card:hover .mp-image,
+.mp-latest-projects .mp-card:focus-visible .mp-image {
+  transform: scale(1);
+  filter: grayscale(0%);
+}
+
+.mp-latest-projects .mp-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.76) 0%, rgba(0,0,0,.3) 35%, rgba(0,0,0,.08) 70%, rgba(0,0,0,.18) 100%);
+}
+
+.mp-latest-projects .mp-copy {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  margin: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.mp-latest-projects .mp-copy h3 {
+  margin: 0;
+  font-size: clamp(18px, 1.45vw, 26px);
+  line-height: 1.15;
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
+}
+
+.mp-latest-projects .mp-copy p {
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(12px, 0.86vw, 14px);
+  line-height: 1.5;
+  max-width: 95%;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.42);
+}
+
+@media (max-width: 767px) {
+  .mp-latest-projects {
+    padding: 44px 18px 54px;
+  }
+
+  .mp-latest-projects .mp-controls {
+    display: none;
+  }
+
+  .mp-latest-projects .mp-card {
+    flex-basis: min(72vw, 270px);
+  }
+}
+</style>
+
+<script>
+(function () {
+  function initSlider(section) {
+    if (!section || section.dataset.mpReady === '1') return;
+    section.dataset.mpReady = '1';
+
+    var track = section.querySelector('.mp-track');
+    var cards = Array.prototype.slice.call(section.querySelectorAll('.mp-card'));
+    var prev = section.querySelector('.mp-prev');
+    var next = section.querySelector('.mp-next');
+
+    if (!track || !cards.length) return;
+
+    function getStep() {
+      var card = cards[0];
+      var styles = window.getComputedStyle(track);
+      var gap = parseFloat(styles.columnGap || styles.gap || 0) || 0;
+      return card.getBoundingClientRect().width + gap;
+    }
+
+    prev && prev.addEventListener('click', function () {
+      track.scrollBy({ left: -getStep(), behavior: 'smooth' });
+    });
+
+    next && next.addEventListener('click', function () {
+      track.scrollBy({ left: getStep(), behavior: 'smooth' });
+    });
+
+    track.addEventListener('wheel', function (e) {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        track.scrollLeft += e.deltaY;
+      }
+    }, { passive: true });
+  }
+
+  document.querySelectorAll('[data-mp-slider]').forEach(initSlider);
+})();
+</script>
