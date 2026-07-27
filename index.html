@@ -453,6 +453,24 @@ I value thoughtful design, clean implementation, and steady improvement—bringi
     flex-basis: min(72vw, 270px);
   }
 }
+
+.testimonial-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.avatar-m { background-color: #1B4FD8; }
+.avatar-s { background-color: #7C3AED; }
+.avatar-n { background-color: #0F766E; }
+.avatar-r { background-color: #B45309; }    
 </style>
 
 <script>
@@ -509,7 +527,7 @@ I value thoughtful design, clean implementation, and steady improvement—bringi
 
                             <div class="s-testimonials__slide swiper-slide">
                                 <div class="s-testimonials__author">
-                                    <img src="user.png" alt="Author image" class="s-testimonials__avatar">
+                                    <div class="testimonial-avatar avatar-m">M</div>
                                     <cite class="s-testimonials__cite">
                                         <strong>Madhuri</strong>
                                         <span>— JNJ by Madhuri</span>
@@ -521,7 +539,7 @@ I value thoughtful design, clean implementation, and steady improvement—bringi
             
                             <div class="s-testimonials__slide swiper-slide">
                                 <div class="s-testimonials__author">
-                                    <img src="user.png" alt="Author image" class="s-testimonials__avatar">
+                                   <div class="testimonial-avatar avatar-s">S</div>
                                     <cite class="s-testimonials__cite">
                                         <strong>Sakshi</strong>
                                         <span>— Shree Handmades</span>
@@ -533,7 +551,7 @@ I value thoughtful design, clean implementation, and steady improvement—bringi
             
                             <div class="s-testimonials__slide swiper-slide">
                                 <div class="s-testimonials__author">
-                                    <img src="user.png" alt="Author image" class="s-testimonials__avatar">
+                                    <div class="testimonial-avatar avatar-n">N</div>
                                     <cite class="s-testimonials__cite">
                                         <strong>Nathoasto Team</strong>
                                         <span>— Nathoasto</span>
@@ -545,7 +563,7 @@ I value thoughtful design, clean implementation, and steady improvement—bringi
     
                             <div class="s-testimonials__slide swiper-slide">
                                 <div class="s-testimonials__author">
-                                    <img src="user.png" alt="Author image" class="s-testimonials__avatar">
+                                    <div class="testimonial-avatar avatar-r">R</div>
                                     <cite class="s-testimonials__cite">
                                         <strong>Radhica Khemka</strong>
                                         <span>— Occasions One</span>
